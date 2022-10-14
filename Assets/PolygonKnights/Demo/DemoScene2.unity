@@ -20499,8 +20499,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.3959146, y: 4.492401, z: 3.6902466}
-  m_Center: {x: 0.42792344, y: 0.88222694, z: 1.4181366}
+  m_Size: {x: 4.3959146, y: 4.492401, z: 9.956951}
+  m_Center: {x: 0.42792344, y: 0.88222694, z: -1.7152157}
 --- !u!4 &808981376
 Transform:
   m_ObjectHideFlags: 0
@@ -34901,6 +34901,18 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1356519002}
+        m_TargetAssemblyTypeName: Mario_Start, Assembly-CSharp
+        m_MethodName: Move
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1356518998}
         m_TargetAssemblyTypeName: SimpleCharacterMovement, Assembly-CSharp
         m_MethodName: Move
@@ -35000,6 +35012,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parent: {fileID: 1356518996}
   child: {fileID: 1978429999}
+  triggerZone: {fileID: 808981374}
+  waitingTime: 2
 --- !u!1001 &1356796974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44076,7 +44090,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1742104035}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.103178, y: 1.1307597, z: 43.9}
+  m_LocalPosition: {x: -9.103178, y: 1.1307597, z: 42.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
