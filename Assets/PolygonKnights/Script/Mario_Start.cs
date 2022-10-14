@@ -25,13 +25,14 @@ public class Mario_Start : MonoBehaviour
     void Update()
     {
 
-        /* Invoke("TriggerFollow", waitingTime); */
-
-        if (direction.magnitude < 0)
+        if (direction.y < 0 && isStarted == true)
         {
             Debug.Log("rikiki");
             child.transform.SetParent(null);
+            triggerZone.transform.SetParent(null);
         }
+
+        Invoke("TriggerFollow" , waitingTime);
     }
 
     private void OnTriggerExit(Collider other)
@@ -54,12 +55,12 @@ public class Mario_Start : MonoBehaviour
         direction = ctx.ReadValue<Vector2>();
     }
 
-    /* void TriggerFollow()
+    void TriggerFollow()
     {
-        if (direction.magnitude > 0 && isStarted == true)
+        if (direction.y > 0 && isStarted == true)
         {
-            Debug.Log("chalala");
+            Debug.Log("Chalala");
             triggerZone.transform.SetParent(parent);
         }
-    } */
+    }
 }
